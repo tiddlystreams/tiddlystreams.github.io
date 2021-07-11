@@ -10149,9 +10149,8 @@ STREAMS in search of a river
     }
 }</pre>
 </div>
-<div created="20210711123358442" modified="20210711123400470" title="$:/DefaultTiddlers">
-<pre>JournalList
-</pre>
+<div created="20210711123358442" modified="20210711165543630" title="$:/DefaultTiddlers">
+<pre>[list[$:/StoryList]]</pre>
 </div>
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
@@ -12068,19 +12067,19 @@ button.szen-streams-btn:hover svg.tc-image-button { color: #444; fill: #444; }
 <div created="20210711152013190" modified="20210711152751145" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
-<div created="20210711114633763" modified="20210711150926022" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Plugins</pre>
+<div created="20210711114633763" modified="20210711165046706" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20210711152711752" modified="20210711152712623" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Shadows</pre>
 </div>
-<div created="20210711122655111" modified="20210711160232414" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20210711122655111" modified="20210711170213121" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210711151952778" list="[[2021-07-11 Sunday]] GtdUseCases AgileNoteTaking" modified="20210711160523593" title="$:/StoryList">
+<div created="20210711165635206" list="AgileNoteTaking GtdUseCases [[2021-07-11 Sunday]]" modified="20210711170229131" title="$:/StoryList">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
@@ -12192,17 +12191,19 @@ button.szen-streams-btn:hover svg.tc-image-button { color: #444; fill: #444; }
     }
 }</pre>
 </div>
-<div created="20210711123549517" modified="20210711154545631" stream-list="[[2021-07-11 Sunday/20210711154338883]]" stream-type="default" tags="Journal" title="2021-07-11 Sunday" type="">
+<div created="20210711123549517" modified="20210711170208180" stream-list="[[2021-07-11 Sunday/20210711154338883]]" stream-type="default" tags="Journal" title="2021-07-11 Sunday" type="">
 <pre>!! To Do:
 * regarding [[last TwUsersList post|https://groups.google.com/g/tiddlywiki/c/-xTFWPwzq6g/m/o6hBNG7KBgAJ]] from MrSaqImtiaz, parse out the &quot;next action&quot; to addres here, i.e.: 
 ** &quot;So when I wrote &quot;an actual real world example of what their content in Streams is like, and what an ideal exported version in a single tiddler in TiddlyWiki would look like&quot; my expectation was for users to provide wikis with a representative example of their content in streams nodes, as well as a single tiddler version of it that they created by hand. For example one tiddler with some stream nodes, the content of which is representative of what their content is usually like. Plus one tiddler that is an amalgamation of those nodes into a single tiddler.&quot;
+** clarify: UseCase vs UserStory ?
+*** see https://www.visual-paradigm.com/guide/agile-software-development/user-story-vs-use-case/
 
-!! NOW: Create GtdUseCases
-
+!! NOW: Create AgileNoteTaking
 
 !! Done:
-* add mohammad's &quot;References&quot; add-on (improves on &quot;References&quot; table that Shiraz plugin brings, based on ideas from MrSorenBjornstad)
-* add Shiraz plugin
+* Create GtdUseCases
+* add Mohammad's &quot;References&quot; add-on (improves on &quot;References&quot; table that Shiraz plugin brings, based on ideas from MrSorenBjornstad)
+* install Mohammad's Shiraz plugin
 * Create and upload a fresh TW instance for this repo, based on
 ** latest production version from tiddlywiki.com
 ** latest plugin(s: including Relink and Relink Titles) from [[Streams source|https://saqimtiaz.github.io/streams/#Installation]] 
@@ -12219,14 +12220,14 @@ STREAMS in search of a river
 
 </pre>
 </div>
-<div created="20210711160729792" modified="20210711164556889" title="AgileNoteTaking">
+<div created="20210711160729792" modified="20210711170316587" title="AgileNoteTaking">
 <pre>''Context'': The motivation for this project arose out of [[this discussion on the TwUsersGroup|https://groups.google.com/g/tiddlywiki/c/vlAZ_K4K63o]] about the article &quot;[[Note Taking in 2021|http://blog.dornea.nu/2021/06/13/note-taking-in-2021/]]&quot; -which gave rise to [[this more focused discussion|https://groups.google.com/g/tiddlywiki/c/-xTFWPwzq6g]] on the topic of NoteTaking (as distinguished from NoteMaking) using TW+Streams as the essential software. 
 
 ''User Story #1'': ReFarmerWalt is a busy guy, whose time is divided between FieldWork and DesktopWork modalities, often having to jump quickly on short notice between the two. Either way, the requirement here is being able to quickly throw ideas and other forms of data into a single inbox as quickly as possible- ideally date/time-stamped and sorted into a list ordered by recency of entry- and to retrieve them just as easily from any one of three platforms: Desktop, Mobile or Web
 
 ''Current Technology &amp; Limitations'': 
 
-# Desktop: In keeping with [[Local-First|https://www.inkandswitch.com/local-first.html]] preference of ReFarmerWalt, this is the definitive source for most current data -maintained in TiddlyDesktop client on Mac.  Files are stored in a special iCloud folder, for reasons of...
+# Desktop: In keeping with [[Local-First|https://www.inkandswitch.com/local-first.html]] preference of ReFarmerWalt, this is the definitive source for most current data -maintained in TiddlyDesktop client, with Streams and Shiraz plugins installed, on Mac.  Files are stored in a special iCloud folder, for reasons of...
 # Mobile: To enable access on iOS platform(s -iPhone and iPad), ReFarmerWalt uses Quine2 software, whose data is stored in that same special iCloud folder above. This enables 2-way data sync, which seems to work pretty well, so long as user saves from one platform before doing any edits on the other (NB: have not yet tested the EditConflict exception for errors).
 # Web: For purposes of travelling w/o access to mobile and/or desktop plaforms, and also for purposes of sharing and collaborating with others, a Github repo (e.g. tiddlystreams.github.io) is used as a 2nd cloud based datastore, since iCloud does not lend itself well to such uses.</pre>
 </div>
@@ -12239,7 +12240,7 @@ STREAMS in search of a river
 
 &lt;/center&gt;</pre>
 </div>
-<div created="20210711134510083" modified="20210711150710576" stream-list="[[2021-07-11 Sunday/20210711133040323]]" stream-type="default" title="GtdUseCases">
+<div created="20210711134510083" modified="20210711170035827" stream-list="[[2021-07-11 Sunday/20210711133040323]]" stream-type="default" title="GtdUseCases">
 <pre>!! Context: 
 Based on the &quot;Getting Things Done&quot; system, as outlined in the eponymous book by David Allen, the first step in achieving &quot;Mind Like Water&quot; is to create a Trusted System (a.k.a. an &quot;OutboardBrain&quot;), wherein you can pour all those ideas that otherwise make for clutter in your mind.  My conceptual model for such a system conforms pretty well to the following image (from http://freshpathconsulting.wordpress.com/):
 
@@ -12250,7 +12251,7 @@ Based on the &quot;Getting Things Done&quot; system, as outlined in the eponymou
 Looks a bit complex, but within this map, i see 3 primary modalities to be developed into UseCases:
 
 * AgileNoteTaking: this case is all about the Inbox, and how to get &quot;stuff&quot; into it with as little friction as possible, from wherever we happen to be.
-* ProjectPlanning: anything that involves &gt;2min to do, with multiple steps and/or other people involved, falls into this category of work; and
+* ProjectPlanning: anything that takes &lt;2min to do, with multiple steps and/or other people involved, falls into this category of work; and
 * WeeklyReview: this is the final most critical part of your workflow, without which the whole system will quickly collapse.  a.k.a. Refactoring- or &quot;Wiki Weeding&quot; if you prefer.  Doesn't matter what you call it; Just Do It!
 
 
