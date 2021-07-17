@@ -157,6 +157,8 @@ Error message and password prompt
 
 <li>$:/DefaultTiddlers</li>
 
+<li>$:/Import</li>
+
 <li>$:/isEncrypted</li>
 
 <li>$:/kookma/references/viewtemplate</li>
@@ -260,6 +262,8 @@ Error message and password prompt
 <li>JournalList</li>
 
 <li>NextActions</li>
+
+<li>ViewTemplateConflict</li>
 
 </ul>
 </p>
@@ -10172,6 +10176,11 @@ STREAMS in search of a river
 <div created="20210711123358442" modified="20210711165543630" title="$:/DefaultTiddlers">
 <pre>[list[$:/StoryList]]</pre>
 </div>
+<div status="complete" title="$:/Import">
+<pre>The following tiddlers were imported:
+
+# [[ViewTemplateConflict]]</pre>
+</div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
@@ -12116,7 +12125,7 @@ button.szen-streams-btn:hover svg.tc-image-button { color: #444; fill: #444; }
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210714173824493" list="FarmingUseCases" modified="20210714173824493" title="$:/StoryList">
+<div created="20210717142147175" list="ViewTemplateConflict" modified="20210717142147175" title="$:/StoryList">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
@@ -12386,6 +12395,73 @@ This tiddler represents a typical case where i need to quickly map out a series 
 So in this case, what i had to do to render it in such form is go in and add extra hashtags (following each hashtag string w/ a space for readability), and add some formatting to the lead-in node of the hierarchy.  
 
 </pre>
+</div>
+<div created="20210717141439364" modified="20210717142114093" title="ViewTemplateConflict">
+<pre>Further to [[Dave Gifford's response|https://groups.google.com/g/tiddlywiki/c/Kg5i94SOx_s/m/keFRnvpGAwAJ]] to the issue i'm having w/ redundant &quot;References&quot; widgets at bottom of all my tiddlers, here is a list of all tiddlers of either System or Shadow type that contain the string &quot;viewtemplate&quot; :
+
+!! System Tiddlers w/ string &quot;viewtemplate&quot;
+$:/.giffmex/ViewTemplate/Backlinks
+$:/.giffmex/Viewtemplate/Backlinks/Links
+$:/core
+$:/core/ui/ViewTemplate/subtitle
+$:/core/ui/ViewTemplate/tags
+$:/core/ui/ViewTemplate/title
+$:/HistoryList
+$:/kookma/references/viewtemplate
+$:/plugins/danielo515/2click2edit
+$:/plugins/giffmex/CustomizerPlugin
+$:/plugins/giffmex/Toggle!
+$:/plugins/kookma/commander
+$:/plugins/kookma/refnotes
+$:/plugins/kookma/shiraz
+$:/plugins/sq/streams
+$:/state/shiraz/slider-macro/Draft of '$:/kookma/references/viewtemplate'/References
+$:/stw/index/~VdLwiki
+$:/stw/index/Grok TiddlyWiki
+$:/stw/index/TiddlyWiki
+$:/stw/index/TW-Scripts
+$:/stw/index/WaltzWikiLocal
+
+!! Shadow Tiddlers w/ string  &quot;viewtemplate&quot;
+
+$:/.giffmex/Customizer/TiddlerConfig
+$:/.giffmex/CustomizerPlugin/readme
+$:/.giffmex/SideControlsPlugin/ViewTemplate/adapted/
+$:/.giffmex/Viewtemplate/Backlinks/HighlightsContext
+$:/.giffmex/Viewtemplate/Backlinks/Links
+$:/.giffmex/Viewtemplate/Backlinks/TranscludeCollapse
+$:/.giffmex/Viewtemplate/Bakclinks/Transclude
+$:/config/ui/ViewTemplate
+$:/core/modules/widgets/view.js
+$:/core/templates/static-tiddler
+$:/core/templates/static.tiddler.html
+$:/core/ui/PageTemplate/story
+$:/core/ui/ViewTemplate
+$:/core/ui/ViewTemplate/body
+$:/core/ui/ViewTemplate/classic
+$:/core/ui/ViewTemplate/import
+$:/core/ui/ViewTemplate/plugin
+$:/core/ui/ViewTemplate/subtitle
+$:/core/ui/ViewTemplate/tags
+$:/core/ui/ViewTemplate/title
+$:/core/ui/ViewTemplate/unfold
+$:/plugins/danielo515/2click2edit/ui/ViewTemplate
+$:/plugins/kookma/commander/viewtemplate/import
+$:/plugins/kookma/refnotes/styles/bibtex-entryview
+$:/plugins/kookma/refnotes/viewtemplates/article
+$:/plugins/kookma/refnotes/viewtemplates/book
+$:/plugins/kookma/refnotes/viewtemplates/default
+$:/plugins/kookma/refnotes/viewtemplates/helper
+$:/plugins/kookma/refnotes/viewtemplates/incollection
+$:/plugins/kookma/refnotes/viewtemplates/inproceedings
+$:/plugins/kookma/refnotes/viewtemplates/main
+$:/plugins/kookma/refnotes/viewtemplates/thesis
+$:/plugins/kookma/refnotes/viewtemplates/unpublished
+$:/plugins/kookma/refnotes/viewtemplates/website
+$:/plugins/kookma/shiraz/viewtemplates/sticky-footer
+$:/plugins/sq/streams/breadcrumbs-view-template
+$:/plugins/sq/streams/stream-view-template
+$:/tags/ViewTemplate</pre>
 </div>
 
 
